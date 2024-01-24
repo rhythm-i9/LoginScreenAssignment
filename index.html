@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="h-screen flex justify-center items-center bg-slate-100">
+        <div class="py-8 w-[30rem] card-container rounded-xl shadow-md space-y-6 flex flex-col divide-y-1 bg-white">
+            <div class=" px-10 sm:px-20 flex flex-col items-center  gap-6">
+                <div class="brand-name text-xl font-extrabold">AVERY</div>
+                <div class="primary-heading font-semibold text-lg">Log in to continue</div>
+                <div class="w-full space-y-4">
+                    <div class="input-area w-full">
+                        <label class="text-xs font-medium">Email ID</label>
+                        <input type="text" placeholder="Enter Email ID"
+                            class="w-full p-2 px-4 block bg-[#f5f7fd] text-slate-700 text-sm font-normal placeholder:text-slate-500 placeholder:text-sm placeholder:font-normal rounded-md outline-none">
+                        </div>
+                        <div class="input-area w-full relative">
+                            <label class="text-xs font-medium">Password</label>
+                            <input type="text" placeholder="Enter a password"
+                            class="w-full p-2 px-4 block bg-[#f5f7fd] text-slate-700 text-sm font-normal placeholder:text-slate-500 placeholder:text-sm placeholder:font-normal rounded-md outline-none">
+                            <img src="./visibility_off.svg" alt="visibility off" class="h-4 absolute bottom-2 right-3">
+                    </div>
+                    <div class="text-center forgot-password font-bold text-sm text-[#31125f]">I forgot my password</div>
+                </div>
+                <Button class="w-full p-1.5 text-white bg-[#31125f] rounded-md">Login</Button>
+                <div class="sub-heading font-semibold text-base">Or continue with</div>
+                <div class="w-full flex flex-col gap-2">
+                    <Button class="p-1.5 border rounded-md text-slate-500 font-medium text-sm inline-flex justify-center space-x-4">
+                        <img src="./icons8-google.svg" alt="google image" class="h-6">
+                        <span>Sign in with Google</span>
+                    </Button>
+                    <Button class="p-1.5 border rounded-md text-slate-500 font-medium text-sm inline-flex justify-center space-x-4">
+                        <img src="./icons8-microsoft.svg" alt="google image" class="h-6">
+                        <span>Sign in with Microsoft</span>
+                    </Button>
+                </div>
+            </div>
+            <div class="border-b-[1px] border-slate-200"></div>
+            <div class="sign-up text-md font-normal text-center">Don't have an account? <span
+                    class="font-bold text-md text-[#31125f]">Sign up here</span></div>
+        </div>
+    </div>
+</body>
+
+</html>
